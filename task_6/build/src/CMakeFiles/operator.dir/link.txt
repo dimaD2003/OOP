@@ -1,0 +1,2 @@
+/usr/bin/ar qc liboperator.a CMakeFiles/operator.dir/operator.cpp.o
+/usr/bin/ranlib liboperator.a
