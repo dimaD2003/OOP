@@ -130,41 +130,41 @@ main/fast:
 .PHONY : main/fast
 
 #=============================================================================
-# Target rules for targets named RingBuffer
+# Target rules for targets named RingBuff
 
 # Build rule for target.
-RingBuffer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RingBuffer
-.PHONY : RingBuffer
+RingBuff: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RingBuff
+.PHONY : RingBuff
 
 # fast build rule for target.
-RingBuffer/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuffer.dir/build.make src/CMakeFiles/RingBuffer.dir/build
-.PHONY : RingBuffer/fast
+RingBuff/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuff.dir/build.make src/CMakeFiles/RingBuff.dir/build
+.PHONY : RingBuff/fast
 
-Task4.o: Task4.cpp.o
-.PHONY : Task4.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-Task4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Task4.cpp.o
-.PHONY : Task4.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-Task4.i: Task4.cpp.i
-.PHONY : Task4.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-Task4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Task4.cpp.i
-.PHONY : Task4.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-Task4.s: Task4.cpp.s
-.PHONY : Task4.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-Task4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Task4.cpp.s
-.PHONY : Task4.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -174,11 +174,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... RingBuffer"
+	@echo "... RingBuff"
 	@echo "... main"
-	@echo "... Task4.o"
-	@echo "... Task4.i"
-	@echo "... Task4.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

@@ -3,6 +3,6 @@
 /root/OOP/Task4/build/CMakeFiles/rebuild_cache.dir
 /root/OOP/Task4/build/include/CMakeFiles/edit_cache.dir
 /root/OOP/Task4/build/include/CMakeFiles/rebuild_cache.dir
-/root/OOP/Task4/build/src/CMakeFiles/RingBuffer.dir
+/root/OOP/Task4/build/src/CMakeFiles/RingBuff.dir
 /root/OOP/Task4/build/src/CMakeFiles/edit_cache.dir
 /root/OOP/Task4/build/src/CMakeFiles/rebuild_cache.dir

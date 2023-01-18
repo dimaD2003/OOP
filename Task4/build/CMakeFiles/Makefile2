@@ -98,7 +98,7 @@ include/clean:
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/RingBuffer.dir/all
+src/all: src/CMakeFiles/RingBuff.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -106,14 +106,14 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/RingBuffer.dir/clean
+src/clean: src/CMakeFiles/RingBuff.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: src/CMakeFiles/RingBuffer.dir/all
+CMakeFiles/main.dir/all: src/CMakeFiles/RingBuff.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/OOP/Task4/build/CMakeFiles --progress-num=3,4 "Built target main"
@@ -136,30 +136,30 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/RingBuffer.dir
+# Target rules for target src/CMakeFiles/RingBuff.dir
 
 # All Build rule for target.
-src/CMakeFiles/RingBuffer.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuffer.dir/build.make src/CMakeFiles/RingBuffer.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuffer.dir/build.make src/CMakeFiles/RingBuffer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/OOP/Task4/build/CMakeFiles --progress-num=1,2 "Built target RingBuffer"
-.PHONY : src/CMakeFiles/RingBuffer.dir/all
+src/CMakeFiles/RingBuff.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuff.dir/build.make src/CMakeFiles/RingBuff.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuff.dir/build.make src/CMakeFiles/RingBuff.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/OOP/Task4/build/CMakeFiles --progress-num=1,2 "Built target RingBuff"
+.PHONY : src/CMakeFiles/RingBuff.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/RingBuffer.dir/rule: cmake_check_build_system
+src/CMakeFiles/RingBuff.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/OOP/Task4/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/RingBuffer.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/RingBuff.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/OOP/Task4/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/RingBuffer.dir/rule
+.PHONY : src/CMakeFiles/RingBuff.dir/rule
 
 # Convenience name for target.
-RingBuffer: src/CMakeFiles/RingBuffer.dir/rule
-.PHONY : RingBuffer
+RingBuff: src/CMakeFiles/RingBuff.dir/rule
+.PHONY : RingBuff
 
 # clean rule for target.
-src/CMakeFiles/RingBuffer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuffer.dir/build.make src/CMakeFiles/RingBuffer.dir/clean
-.PHONY : src/CMakeFiles/RingBuffer.dir/clean
+src/CMakeFiles/RingBuff.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuff.dir/build.make src/CMakeFiles/RingBuff.dir/clean
+.PHONY : src/CMakeFiles/RingBuff.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

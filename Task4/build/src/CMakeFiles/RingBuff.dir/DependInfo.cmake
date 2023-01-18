@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/OOP/Task4/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "/root/OOP/Task4/src/RingBuff.cpp" "src/CMakeFiles/RingBuff.dir/RingBuff.cpp.o" "gcc" "src/CMakeFiles/RingBuff.dir/RingBuff.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/root/OOP/Task4/build/src/CMakeFiles/RingBuff.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

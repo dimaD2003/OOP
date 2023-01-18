@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/RingBuffer.dir/rule:
-	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/RingBuffer.dir/rule
-.PHONY : src/CMakeFiles/RingBuffer.dir/rule
+src/CMakeFiles/RingBuff.dir/rule:
+	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/RingBuff.dir/rule
+.PHONY : src/CMakeFiles/RingBuff.dir/rule
 
 # Convenience name for target.
-RingBuffer: src/CMakeFiles/RingBuffer.dir/rule
-.PHONY : RingBuffer
+RingBuff: src/CMakeFiles/RingBuff.dir/rule
+.PHONY : RingBuff
 
 # fast build rule for target.
-RingBuffer/fast:
-	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuffer.dir/build.make src/CMakeFiles/RingBuffer.dir/build
-.PHONY : RingBuffer/fast
+RingBuff/fast:
+	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuff.dir/build.make src/CMakeFiles/RingBuff.dir/build
+.PHONY : RingBuff/fast
 
-RingBuffer.o: RingBuffer.cpp.o
-.PHONY : RingBuffer.o
+RingBuff.o: RingBuff.cpp.o
+.PHONY : RingBuff.o
 
 # target to build an object file
-RingBuffer.cpp.o:
-	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuffer.dir/build.make src/CMakeFiles/RingBuffer.dir/RingBuffer.cpp.o
-.PHONY : RingBuffer.cpp.o
+RingBuff.cpp.o:
+	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuff.dir/build.make src/CMakeFiles/RingBuff.dir/RingBuff.cpp.o
+.PHONY : RingBuff.cpp.o
 
-RingBuffer.i: RingBuffer.cpp.i
-.PHONY : RingBuffer.i
+RingBuff.i: RingBuff.cpp.i
+.PHONY : RingBuff.i
 
 # target to preprocess a source file
-RingBuffer.cpp.i:
-	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuffer.dir/build.make src/CMakeFiles/RingBuffer.dir/RingBuffer.cpp.i
-.PHONY : RingBuffer.cpp.i
+RingBuff.cpp.i:
+	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuff.dir/build.make src/CMakeFiles/RingBuff.dir/RingBuff.cpp.i
+.PHONY : RingBuff.cpp.i
 
-RingBuffer.s: RingBuffer.cpp.s
-.PHONY : RingBuffer.s
+RingBuff.s: RingBuff.cpp.s
+.PHONY : RingBuff.s
 
 # target to generate assembly for a file
-RingBuffer.cpp.s:
-	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuffer.dir/build.make src/CMakeFiles/RingBuffer.dir/RingBuffer.cpp.s
-.PHONY : RingBuffer.cpp.s
+RingBuff.cpp.s:
+	cd /root/OOP/Task4/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RingBuff.dir/build.make src/CMakeFiles/RingBuff.dir/RingBuff.cpp.s
+.PHONY : RingBuff.cpp.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... RingBuffer"
-	@echo "... RingBuffer.o"
-	@echo "... RingBuffer.i"
-	@echo "... RingBuffer.s"
+	@echo "... RingBuff"
+	@echo "... RingBuff.o"
+	@echo "... RingBuff.i"
+	@echo "... RingBuff.s"
 .PHONY : help
 
 

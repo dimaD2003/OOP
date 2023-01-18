@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRingBuff.a CMakeFiles/RingBuff.dir/RingBuff.cpp.o
+/usr/bin/ranlib libRingBuff.a
