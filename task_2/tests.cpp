@@ -5,8 +5,8 @@
 TEST(ReadLineTest, ReadLine)
 {
 	
-std::string str="fw dd";
-EXPECT_EQ(DeleteSpace(str), "fwdd");
+std::string str="he lo";
+EXPECT_EQ(DeleteSpace(str), "helo");
 }
 TEST(Read2, ReadTo)
 {
@@ -20,5 +20,11 @@ TEST(Read2, Readto2){
   std::ostringstream out;
 
 output(ss,out);
- 	EXPECT_EQ(out.str(), "#Myteam");
+ 	EXPECT_EQ(out.str(), "my team");
  }
+TEST(hashtag, hashtagTo){
+  std::string ss="you love c++";
+  
+
+
+        EXPECT_EQ(hashtagMaker(ss), "#Youlovec++");}

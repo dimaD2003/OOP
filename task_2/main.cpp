@@ -7,9 +7,8 @@
 
 int main()
 {
-    std::string str;
-    std::cout << "string = " << std::endl;
-    getline(std::cin, str);
+ std::string str = input(str);
+    str = hashtagMaker(str);
     output(str, std::cout);
 
     return 0;
