@@ -1,4 +1,4 @@
-# Install script for directory: //root/OOP/task_6/include
+# Install script for directory: /root/OOP/task_6/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

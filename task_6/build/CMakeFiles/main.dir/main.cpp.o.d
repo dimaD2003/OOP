@@ -1,4 +1,4 @@
-CMakeFiles/main.dir/main.cpp.o: //root/OOP/task_6/main.cpp \
+CMakeFiles/main.dir/main.cpp.o: /root/OOP/task_6/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -145,4 +145,4 @@ CMakeFiles/main.dir/main.cpp.o: //root/OOP/task_6/main.cpp \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/iostream \
  /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
- //root/OOP/task_6/src/../include/Operator/operator.h
+ /root/OOP/task_6/src/../include/Operator/operator.h

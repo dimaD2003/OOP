@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = //root/OOP/task_6
+CMAKE_SOURCE_DIR = /root/OOP/task_6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = //root/OOP/task_6/build
+CMAKE_BINARY_DIR = /root/OOP/task_6/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -85,16 +85,61 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd //root/OOP/task_6/build && $(CMAKE_COMMAND) -E cmake_progress_start //root/OOP/task_6/build/CMakeFiles //root/OOP/task_6/build/src//CMakeFiles/progress.marks
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start //root/OOP/task_6/build/CMakeFiles 0
+	cd /root/OOP/task_6/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/OOP/task_6/build/CMakeFiles /root/OOP/task_6/build/src//CMakeFiles/progress.marks
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/OOP/task_6/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd //root/OOP/task_6/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/OOP/task_6/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/operator.dir/rule:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/operator.dir/rule
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/operator.dir/rule
 .PHONY : src/CMakeFiles/operator.dir/rule
 
 # Convenience name for target.
@@ -127,12 +172,12 @@ operator: src/CMakeFiles/operator.dir/rule
 
 # fast build rule for target.
 operator/fast:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/operator.dir/build.make src/CMakeFiles/operator.dir/build
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/operator.dir/build.make src/CMakeFiles/operator.dir/build
 .PHONY : operator/fast
 
 # Convenience name for target.
 src/CMakeFiles/stack.dir/rule:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/stack.dir/rule
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/stack.dir/rule
 .PHONY : src/CMakeFiles/stack.dir/rule
 
 # Convenience name for target.
@@ -141,7 +186,7 @@ stack: src/CMakeFiles/stack.dir/rule
 
 # fast build rule for target.
 stack/fast:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stack.dir/build.make src/CMakeFiles/stack.dir/build
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stack.dir/build.make src/CMakeFiles/stack.dir/build
 .PHONY : stack/fast
 
 operator.o: operator.cpp.o
@@ -149,7 +194,7 @@ operator.o: operator.cpp.o
 
 # target to build an object file
 operator.cpp.o:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/operator.dir/build.make src/CMakeFiles/operator.dir/operator.cpp.o
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/operator.dir/build.make src/CMakeFiles/operator.dir/operator.cpp.o
 .PHONY : operator.cpp.o
 
 operator.i: operator.cpp.i
@@ -157,7 +202,7 @@ operator.i: operator.cpp.i
 
 # target to preprocess a source file
 operator.cpp.i:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/operator.dir/build.make src/CMakeFiles/operator.dir/operator.cpp.i
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/operator.dir/build.make src/CMakeFiles/operator.dir/operator.cpp.i
 .PHONY : operator.cpp.i
 
 operator.s: operator.cpp.s
@@ -165,7 +210,7 @@ operator.s: operator.cpp.s
 
 # target to generate assembly for a file
 operator.cpp.s:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/operator.dir/build.make src/CMakeFiles/operator.dir/operator.cpp.s
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/operator.dir/build.make src/CMakeFiles/operator.dir/operator.cpp.s
 .PHONY : operator.cpp.s
 
 stack.o: stack.cpp.o
@@ -173,7 +218,7 @@ stack.o: stack.cpp.o
 
 # target to build an object file
 stack.cpp.o:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stack.dir/build.make src/CMakeFiles/stack.dir/stack.cpp.o
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stack.dir/build.make src/CMakeFiles/stack.dir/stack.cpp.o
 .PHONY : stack.cpp.o
 
 stack.i: stack.cpp.i
@@ -181,7 +226,7 @@ stack.i: stack.cpp.i
 
 # target to preprocess a source file
 stack.cpp.i:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stack.dir/build.make src/CMakeFiles/stack.dir/stack.cpp.i
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stack.dir/build.make src/CMakeFiles/stack.dir/stack.cpp.i
 .PHONY : stack.cpp.i
 
 stack.s: stack.cpp.s
@@ -189,7 +234,7 @@ stack.s: stack.cpp.s
 
 # target to generate assembly for a file
 stack.cpp.s:
-	cd //root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stack.dir/build.make src/CMakeFiles/stack.dir/stack.cpp.s
+	cd /root/OOP/task_6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stack.dir/build.make src/CMakeFiles/stack.dir/stack.cpp.s
 .PHONY : stack.cpp.s
 
 # Help Target
@@ -199,6 +244,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... operator"
 	@echo "... stack"
@@ -219,6 +268,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd //root/OOP/task_6/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/OOP/task_6/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

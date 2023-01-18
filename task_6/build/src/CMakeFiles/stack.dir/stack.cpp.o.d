@@ -1,4 +1,4 @@
-src/CMakeFiles/stack.dir/stack.cpp.o: //root/OOP/task_6/src/stack.cpp \
+src/CMakeFiles/stack.dir/stack.cpp.o: /root/OOP/task_6/src/stack.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -145,4 +145,4 @@ src/CMakeFiles/stack.dir/stack.cpp.o: //root/OOP/task_6/src/stack.cpp \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- //root/OOP/task_6/src/../include/Stack/stack.h
+ /root/OOP/task_6/src/../include/Stack/stack.h
