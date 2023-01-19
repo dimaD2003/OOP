@@ -28,3 +28,18 @@ TEST(hashtag, hashtagTo){
 
 
         EXPECT_EQ(hashtagMaker(ss), "#Youlovec++");}
+TEST(hashtag2, hashtagTo2){
+  std::string ss="    you love c++";
+
+
+
+        EXPECT_EQ(hashtagMaker(ss), "#Youlovec++");}
+
+
+
+TEST(input2, inputTo2){
+  
+
+
+
+        EXPECT_EQ(input(""), "");}
