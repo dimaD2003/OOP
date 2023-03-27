@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+        text-align: center;
+        font-family: Verdana;
+        background: #161e64;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-family: 'Quantico', sans-serif;
+ 
+    
+    /* box-sizing: border-box; */
+    
+}
+
+@keyframes slide {
+    0%{ background-position: 0% 0%;
+}
+50%{ background-position: 100% 0%;
+}
+
+100%{ background-position: 0% 0%;
+}
+
+}
+.container{
+    
+    background-color: #17074fad ;
+    height: 100vh;
+    text-align: center;
+    background-image:url(cripto.jpg)  ;
+    padding: 30px;
+   
+    animation: slide 50s linear infinite ;
+    background-size: cover;
+  background-repeat: repeat-x;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-family: 'Quantico', sans-serif;
+  font-weight: 400;
+  /* background-position: center; */
+   
+}
+
+
+
+   
+    
+
+
+.contant{
+    /* //max-width: 960px; */
+   
+    margin: 0 95px 0 95px;
+    /* text-align: center;
+   background-image:url(cripto.jpg) ;
+   
+  
+   animation: slide 70s linear infinite; */
+    /* //padding: 0 20px 0 20px; */ background-repeat: repeat-x;
+   height: 50%;
+   padding-top: 10px;
+  
+}
+
+h1{
+    color: #ddddfcbd;
+    font-size: 42px;
+    margin: 40px 0 40px 0;
+}
+h3 {
+    color: #ddddfcda;
+    font-size: 24px;
+    margin: 40px 0 20px 0;
+}
+.input-count{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+    width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #130d49;
+  background: #16126bbe;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  color: white;
+}
+
+.input-count:focus{
+    border: 3px solid #555;
+    max-height: 150px;
+}
+
+.btn-count{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+    background-color: #3348e4bb;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 8px 0px;
+    cursor: pointer;
+    border-radius: 8%;
+    
+}
+.btn-count:hover{
+    background-color: #23136d;
+    
+}
+
+
+
+.input-adr-amoun-btn>input{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #23136c98;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;border-radius: 8%;
+background: #15205bb0;
+color:white
+
+}
+.input-adr-amoun-btn>input:nth-child(2){
+    width: 15%;
+    color:white
+    
+  
+
+}
+.btn-send{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+    background-color: #3348e4a9;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 8px 0px;
+    cursor: pointer;
+    border-radius: 8%;
+}
+.btn-send:active {
+    vertical-align: middle;
+    background-color: #23136d;
+}
