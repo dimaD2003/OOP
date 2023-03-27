@@ -26,7 +26,7 @@ body {
     background-color: #17074fad ;
     height: 100vh;
     text-align: center;
-    background-image:url(cripto.jpg)  ;
+    background-image:url("..//cripto.jpg")  ;
     padding: 30px;
    
     animation: slide 50s linear infinite ;
