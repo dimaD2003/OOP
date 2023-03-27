@@ -100,10 +100,25 @@ h3 {
     opacity: 0.5; 
 }
 
-.input-adr-amoun-btn>input{
+.btn-back{
     font-family: 'Noto Sans Display', sans-serif;
     font-family: 'Quantico', sans-serif;
     font-weight: 400;
+    background-color: #3348e4a9;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 8px 0px;
+    cursor: pointer;
+    border-radius: 8%;
+}
+
+
+.input-adr-amoun-btn>input{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -117,7 +132,6 @@ color:white
 
 }
 .input-adr-amoun-btn>input::-webkit-input-placeholder {
-    /* // color: black; Change the placeholder color */
      opacity: 0.5; /*Change the opacity between 0 and 1*/
  }
 

@@ -1,4 +1,4 @@
-
+//location.reload();
 const contractAddress = "0xE60418d4288a8E62FD1b17be26c7BCeE322d5B05"; 
 const tokenAddress= "0xbd3D7Fe60760e5657079584609c8EF158D7ca11c";
 const tokenAbi=[
@@ -242,7 +242,7 @@ inputs.forEach(item => {
  for(let i= count; i>0; i--){
    
      let newElem=` <div class="input-adr-amoun-btn ">
-
+	
         <input type="text" placeholder="addres"   data-text= ${i}>
         <input type="number" placeholder="amount"  data-num= ${i}> 
         ` ;
@@ -261,6 +261,7 @@ btnCount.addEventListener('click', function() {
 			item.remove()
 			
 		});
+		DivAllinput.insertAdjacentHTML('beforebegin', `  <button class="btn-back" onclick="location.reload(); return false" >&#8592</button`)
     contant.insertAdjacentHTML("beforeend", `<button class="btn-send" onclick="airdropWithTransfer()" > send</button></div>`)
 	
 	}else{
