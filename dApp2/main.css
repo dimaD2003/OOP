@@ -2,15 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-
-        text-align: center;
-        font-family: Verdana;
-        background: #161e64;
-        font-family: 'Noto Sans Display', sans-serif;
-        font-family: 'Quantico', sans-serif;
- 
+    text-align: center;
+    background: #161e64;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Quantico', sans-serif;
     
-    /* box-sizing: border-box; */
+
     
 }
 
@@ -38,26 +35,11 @@ body {
   font-family: 'Noto Sans Display', sans-serif;
   font-family: 'Quantico', sans-serif;
   font-weight: 400;
-  /* background-position: center; */
-   
-}
-
-
 
    
-    
-
+}   
 
 .contant{
-    /* //max-width: 960px; */
-   
-    margin: 0 95px 0 95px;
-    /* text-align: center;
-   background-image:url(cripto.jpg) ;
-   
-  
-   animation: slide 70s linear infinite; */
-    /* //padding: 0 20px 0 20px; */ background-repeat: repeat-x;
    height: 50%;
    padding-top: 10px;
   
@@ -113,7 +95,10 @@ h3 {
     
 }
 
+.input-count::-webkit-input-placeholder {
 
+    opacity: 0.5; 
+}
 
 .input-adr-amoun-btn>input{
     font-family: 'Noto Sans Display', sans-serif;
@@ -131,6 +116,11 @@ background: #15205bb0;
 color:white
 
 }
+.input-adr-amoun-btn>input::-webkit-input-placeholder {
+    /* // color: black; Change the placeholder color */
+     opacity: 0.5; /*Change the opacity between 0 and 1*/
+ }
+
 .input-adr-amoun-btn>input:nth-child(2){
     width: 15%;
     color:white

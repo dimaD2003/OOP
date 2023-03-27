@@ -1,4 +1,4 @@
-//import { ethers } from "ethers";
+
 const contractAddress = "0xE60418d4288a8E62FD1b17be26c7BCeE322d5B05"; 
 const tokenAddress= "0xbd3D7Fe60760e5657079584609c8EF158D7ca11c";
 const tokenAbi=[
@@ -224,38 +224,30 @@ provider.send("eth_requestAccounts", []).then(() => {
     });
 });
 
-
-
-//const FakeTok = new web3.eth.Contract(tokenAbi, tokenAddress);
-//const FakeTokenAddress = FakeTok.options.address;
-
-
-
-
-
 //===============================================//
 const countRecipients= document.getElementById("countRecipient");
 const DivAllinput=document.querySelector('.inputs-adr-amount-btn')
 const btnCount= document.querySelector('.btn-count')
 const contant= document.querySelector('.contant')
 
+//добавление нужного количества инпутов типа( адрес-- количество)
+function AddInput (count) {
 
-  function AddInput (count) {
-
-    let inputs = document.querySelectorAll('.input-adr-amoun-btn');
-    inputs.forEach(item => {
-        item.remove()
+let inputs = document.querySelectorAll('.input-adr-amoun-btn');
+inputs.forEach(item => {
+      item.remove()
         
-    });
+ });
   
-    for(let i= count; i>0; i--){
+ for(let i= count; i>0; i--){
    
-        let newElem=` <div class="input-adr-amoun-btn ">
-        <input type="text" data-text= ${i}>
-        <input type="number" data-num= ${i}> 
+     let newElem=` <div class="input-adr-amoun-btn ">
+
+        <input type="text" placeholder="addres"   data-text= ${i}>
+        <input type="number" placeholder="amount"  data-num= ${i}> 
         ` ;
 
-        DivAllinput.insertAdjacentHTML("afterend", newElem);
+    DivAllinput.insertAdjacentHTML("afterend", newElem);
     
 } }
 
@@ -264,33 +256,33 @@ btnCount.addEventListener('click', function() {
 	if(countRecipients.value!=0){
 
 		AddInput(countRecipients.value);
-    let btn = document.querySelectorAll('.btn-send');
-    btn.forEach(item => {
-        item.remove()
-        
-    });
+		let btn = document.querySelectorAll('.btn-send');
+		btn.forEach(item => {
+			item.remove()
+			
+		});
     contant.insertAdjacentHTML("beforeend", `<button class="btn-send" onclick="airdropWithTransfer()" > send</button></div>`)
+	
 	}else{
+
 		alert("input count of recipients")
 	}
      }
 
 );
 
-
+//перевод введенных адресов в массив адресов
 function addresInMas () {
     let inputAddress = document.querySelectorAll('input[data-text]');
-    //[..., ... , .... ,  ]
     let masAddress = [];
     
     for(let i=0; i<inputAddress.length; i++){
         masAddress.push(inputAddress[i].value)
     }
-    return masAddress
+    return masAddress  //[0x26b.... , 0xxwd6q... ,  ]
   
-// return [0x26b.... , 0xxwd6q... ,  ]
   }
-
+//перевод введенных количеств в массив количеств
   function amountInMas () {
     let inputAmount = document.querySelectorAll('input[data-num]');
    
@@ -299,28 +291,26 @@ function addresInMas () {
     for(let i=0; i<inputAmount.length; i++){
         masAmount.push(inputAmount[i].value)
     }
-  // return [10, 20 , .. ]
-  return masAmount
+ 
+  return masAmount //[10, 20 , .. ]
   }
 
 
 //===============================================//
 async function airdropWithTransfer() {
-    const FakeTok = new ethers.Contract(tokenAddress, tokenAbi, provider); // создаем экземпл€р контракта
+const FakeTok = new ethers.Contract(tokenAddress, tokenAbi, provider); // создаем экземпл€р контракта
 const FakeTokenAddress = await FakeTok.address;
-    let addressArray= []
-    let amountArray=[]
-    addressArray=addresInMas()
-    amountArray =amountInMas()
-	if(addressArray!=0 && amountArray!=0 && (addressArray.length=== amountArray.length) ){
- 		const airdropWithTransfer = await contract.airdropWithTransfer(FakeTokenAddress, addressArray, amountArray);
+let addressArray= []
+let amountArray=[]
+addressArray=addresInMas()
+amountArray =amountInMas()
+if(addressArray!=0 && amountArray!=0 && (addressArray.length=== amountArray.length) ){
+ 	const airdropWithTransfer = await contract.airdropWithTransfer(FakeTokenAddress, addressArray, amountArray);
 
-	}else[
-		alert("error in quantity")
-	]
+}else[
+	alert("error in quantity")
+]
    
   }
 
-//0x205c657a1dd882f4d9D12E5CD388102D4cF46733 - 1\
-//0xcbF2539da7C83f4Dec97C53a954Faa0FE6165A3A  -3
-//https://testnet.bscscan.com/tx/0x7d48c3fa0308988383b8682bb505eae2b7040f53e890510fd598412cca4b9938
+
